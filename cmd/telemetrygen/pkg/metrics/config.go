@@ -40,6 +40,7 @@ func (c *Config) Flags(fs *pflag.FlagSet) {
 
 	fs.StringVar(&c.TraceID, "trace-id", c.TraceID, "TraceID to use as exemplar")
 	fs.StringVar(&c.SpanID, "span-id", c.SpanID, "SpanID to use as exemplar")
+	fs.StringVar(&c.MetricName, "metric-name", c.MetricName, "Metric name to use for generated metrics")
 
 	fs.Var(&c.MetricType, "metric-type", "Metric type enum. must be one of 'Gauge' or 'Sum'")
 	fs.Var(&c.AggregationTemporality, "aggregation-temporality", "aggregation-temporality for metrics. Must be one of 'delta' or 'cumulative'")

@@ -105,3 +105,11 @@ telemetrygen logs --duration 5s --otlp-insecure
 ```console
 telemetrygen metrics --duration 5s --otlp-insecure
 ```
+
+You can customize the name of the generated metrics using the `--metric-name` flag:
+
+```console
+telemetrygen metrics --duration 5s --otlp-insecure --metric-name custom-metric
+```
+
+Check `telemetrygen metrics --help` for all the options.
